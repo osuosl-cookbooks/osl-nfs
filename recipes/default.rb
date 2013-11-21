@@ -18,4 +18,4 @@
 #
 
 include_recipe "nfs::server"
-include_recipe "osl-nfs::firewall"
+include_recipe "firewall::nfs"
