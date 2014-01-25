@@ -1,5 +1,6 @@
-cookbook "rdiff-backup", git: "https://github.com/osuosl-cookbooks/rdiff-backup.git"
-cookbook "firewall", git: "https://github.com/osuosl-cookbooks/firewall.git"
+cookbook "rdiff-backup", github: "osuosl-cookbooks/rdiff-backup", protocol: :ssh
+cookbook "firewall", github: "osuosl-cookbooks/firewall", protocol: :ssh
+cookbook "yum", "< 3.0.0"
 
 site :opscode
 
