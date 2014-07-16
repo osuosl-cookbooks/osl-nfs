@@ -18,13 +18,9 @@
 #
 
 include_recipe "osl-nfs::default"
-include_recipe "rdiff-backup::client"
 
 nfs_export "/data/homes/" do
   network '10.1.0.0/23'
   writeable true
   options ['mountpoint,no_root_squash']
 end
-
-node.set['rdiff-backup']['client']['source-dirs'] = ["/data/homes"]
-node.set['rdiff-backup']['client']['retention-period'] = "1D"
