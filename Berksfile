@@ -1,6 +1,5 @@
-cookbook "firewall", github: "osuosl-cookbooks/firewall", protocol: :ssh
-cookbook "yum", "< 3.0.0"
+source 'https://supermarket.chef.io'
 
-site :opscode
+cookbook "firewall", git: 'git@github.com:osuosl-cookbooks/firewall'
 
 metadata

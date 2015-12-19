@@ -8,3 +8,5 @@ version          '0.1.0'
 
 depends          'nfs'
 depends          'firewall'
+
+supports         'centos', '~> 6'

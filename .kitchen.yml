@@ -1,0 +1,8 @@
+---
+suites:
+  - name: default
+    run_list:
+      - recipe[osl-nfs::default]
+  - name: homes
+    run_list:
+      - recipe[osl-nfs::homes]
