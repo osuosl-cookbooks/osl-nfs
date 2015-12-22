@@ -19,6 +19,10 @@
 
 include_recipe 'osl-nfs::default'
 
+directory '/data/homes/' do
+  recursive true
+end
+
 nfs_export '/data/homes/' do
   network (1..26).map { |octet| '10.1.1.' + octet.to_s + '/32' }
   writeable true

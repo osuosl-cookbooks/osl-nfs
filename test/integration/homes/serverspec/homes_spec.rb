@@ -10,6 +10,6 @@ end
 describe file('/etc/exports') do
   it { should be_file }
   its(:content) do
-    should match(%r{/data/homes/ 10.1.0.0/23\(rw,sync,mountpoint,no_root_squash\)})
+    should eq("/data/homes/ " + (1..26).map{ |o| '10.1.1.' + o.to_s + '/32(rw,sync,mountpoint,no_root_squash)'}.join(' ') + "\n")
   end
 end
