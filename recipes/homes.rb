@@ -17,10 +17,14 @@
 # limitations under the License.
 #
 
-include_recipe "osl-nfs::default"
+include_recipe 'osl-nfs::default'
 
-nfs_export "/data/homes/" do
-  network '10.1.0.0/23'
+directory '/data/homes/' do
+  recursive true
+end
+
+nfs_export '/data/homes/' do
+  network (1..26).map { |octet| '10.1.1.' + octet.to_s + '/32' }
   writeable true
   options ['mountpoint,no_root_squash']
 end
