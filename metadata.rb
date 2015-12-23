@@ -9,4 +9,4 @@ version          '0.1.1'
 depends          'nfs'
 depends          'firewall'
 
-supports         'centos', '~> 6'
+supports         'centos', '~> 6.0'
