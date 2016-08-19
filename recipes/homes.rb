@@ -24,7 +24,7 @@ directory '/data/homes/' do
 end
 
 nfs_export '/data/homes/' do
-  network (1..254).map { |octet| '10.162.136.' + octet.to_s + '/24' }
+  network '10.162.136.0/24' 
   writeable true
   options ['mountpoint,no_root_squash']
 end
