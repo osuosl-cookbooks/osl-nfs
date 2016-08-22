@@ -24,7 +24,7 @@ directory '/data/homes/' do
 end
 
 nfs_export '/data/homes/' do
-  network '10.162.136.0/24' 
+  network '10.162.136.0/24'
   writeable true
   options ['mountpoint,no_root_squash']
 end
