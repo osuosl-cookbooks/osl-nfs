@@ -12,7 +12,7 @@ describe 'osl-nfs::homes' do
   end
   it do
     expect(chef_run).to create_nfs_export('/data/homes/').with(
-      network: '10.162.136.0/24',
+      network: '10.162.136.224/27',
       writeable: true,
       options: ['mountpoint,no_root_squash']
     )
