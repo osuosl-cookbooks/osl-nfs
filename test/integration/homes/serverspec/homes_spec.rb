@@ -9,7 +9,7 @@ end
 
 describe file('/etc/exports') do
   its(:content) do
-    should eq('/data/homes/ 10.162.136.224/27(rw,sync,mountpoint,no_root_squash)'\
-      + "\n")
+    should eq('/data/homes/ 10.162.136.224/27(rw,sync,mountpoint,' \
+      'no_root_squash)' + "\n")
   end
 end
