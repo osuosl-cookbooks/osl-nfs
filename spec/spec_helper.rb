@@ -3,14 +3,21 @@ require 'chefspec/berkshelf'
 
 ChefSpec::Coverage.start! { add_filter 'osl-nfs' }
 
-CENTOS_7_OPTS = {
+CENTOS_7 = {
   platform: 'centos',
-  version: '7.2.1511',
-  log_level: :fatal
+  version: '7.2.1511'
 }.freeze
 
-CENTOS_6_OPTS = {
+CENTOS_6 = {
   platform: 'centos',
-  version: '6.7',
-  log_level: :fatal
+  version: '6.7'
 }.freeze
+
+ALL_PLATFORMS = [
+  CENTOS_6,
+  CENTOS_7
+].freeze
+
+RSpec.configure do |config|
+  config.log_level = :fatal
+end
