@@ -1,3 +1,5 @@
-require 'serverspec'
+require 'shared_examples'
 
-set :backend, :exec
+describe 'default' do
+  it_behaves_like 'nfs'
+end
