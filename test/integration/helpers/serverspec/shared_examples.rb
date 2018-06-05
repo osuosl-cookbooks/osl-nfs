@@ -10,6 +10,7 @@ shared_examples 'nfs' do
     end
   else
     describe service('nfs') do
+      # Only check enabled on CentOS 7 since this service just runs and exits
       it { should be_enabled }
     end
     describe service('nfs-mountd') do
