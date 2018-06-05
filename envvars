@@ -1,0 +1,4 @@
+cookbook=osl-nfs
+version=0.2.1
+envs=*
+pr_link=https://github.com/osuosl-cookbooks/osl-nfs/pull/4
