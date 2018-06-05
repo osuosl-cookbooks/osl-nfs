@@ -1,10 +1,7 @@
-require 'serverspec'
+require 'shared_examples'
 
-set :backend, :exec
-
-describe service('nfs') do
-  it { should be_enabled }
-  it { should be_running }
+describe 'default' do
+  it_behaves_like 'nfs'
 end
 
 describe file('/etc/exports') do
