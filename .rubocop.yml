@@ -7,3 +7,12 @@ AllCops:
 
 Style/NumericLiteralPrefix:
   EnforcedOctalStyle: zero_only
+
+Metrics/LineLength:
+  Max: 120
+
+Style/IfUnlessModifier:
+  MaxLineLength: 120
+
+Style/WhileUntilModifier:
+  MaxLineLength: 120
