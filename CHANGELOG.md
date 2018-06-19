@@ -3,6 +3,10 @@ osl-nfs CHANGELOG
 This file is used to list changes made in each version of the
 osl-nfs cookbook.
 
+0.2.3 (2018-06-19)
+------------------
+- Allow 10.162.136.0/24 on homes recipe
+
 0.2.2 (2018-06-05)
 ------------------
 - Misc fixes

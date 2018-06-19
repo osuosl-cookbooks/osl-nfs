@@ -6,7 +6,7 @@ source_url       'https://github.com/osuosl-cookbooks/osl-nfs'
 license          'Apache 2.0'
 description      'Installs/Configures osl-nfs'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '0.2.2'
+version          '0.2.3'
 
 depends          'nfs', '~> 2.4.1'
 depends          'line', '< 2.0.0'
