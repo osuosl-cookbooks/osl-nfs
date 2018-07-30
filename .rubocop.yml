@@ -16,3 +16,6 @@ Style/IfUnlessModifier:
 
 Style/WhileUntilModifier:
   MaxLineLength: 120
+
+Metrics/BlockLength:
+  Max: 35
