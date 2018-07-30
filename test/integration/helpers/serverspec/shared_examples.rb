@@ -22,4 +22,17 @@ shared_examples 'nfs' do
       it { should be_running }
     end
   end
+  describe command('rpcinfo -p localhost') do
+    [
+      %w(111 portmapper),
+      %w(32765 status),
+      %w(32767 mountd),
+      %w(2049 nfs),
+      %w(2049 nfs_acl),
+      %w(32768 nlockmgr)
+    ].each do |port, service|
+      its(:stdout) { should match(/tcp.*#{port}.*#{service}$/) }
+      its(:stdout) { should match(/udp.*#{port}.*#{service}$/) }
+    end
+  end
 end
