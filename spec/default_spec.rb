@@ -4,7 +4,9 @@ describe 'osl-nfs::default' do
   ALL_PLATFORMS.each do |p|
     context "#{p[:platform]} #{p[:version]}" do
       cached(:chef_run) do
-        ChefSpec::SoloRunner.new(p).converge(described_recipe)
+        ChefSpec::SoloRunner.new(p) do |node|
+          node.automatic['kernel']['modules'] = %w(nfs) if p == CENTOS_7
+        end.converge(described_recipe)
       end
       it do
         expect { chef_run }.to_not raise_error
