@@ -3,6 +3,10 @@ osl-nfs CHANGELOG
 This file is used to list changes made in each version of the
 osl-nfs cookbook.
 
+1.0.0 (2018-09-12)
+------------------
+- Chef 13 compatibility fixes
+
 0.2.4 (2018-07-30)
 ------------------
 - Properly set lockd port on CentOS 7
