@@ -29,7 +29,7 @@ shared_examples 'nfs' do
       %w(32767 mountd),
       %w(2049 nfs),
       %w(2049 nfs_acl),
-      %w(32768 nlockmgr)
+      %w(32768 nlockmgr),
     ].each do |port, service|
       its(:stdout) { should match(/tcp.*#{port}.*#{service}$/) }
       its(:stdout) { should match(/udp.*#{port}.*#{service}$/) }
