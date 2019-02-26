@@ -26,14 +26,4 @@ end
 
 include_recipe 'nfs::server'
 
-edit_resource(:sysctl_param, 'fs.nfs.nlm_tcpport') do
-  notifies :restart, "service[#{node['nfs']['service']['server']}]"
-  only_if { node['platform_version'].to_i >= 7 }
-end
-
-edit_resource(:sysctl_param, 'fs.nfs.nlm_udpport') do
-  notifies :restart, "service[#{node['nfs']['service']['server']}]"
-  only_if { node['platform_version'].to_i >= 7 }
-end
-
 include_recipe 'firewall::nfs'

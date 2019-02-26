@@ -11,8 +11,7 @@ version          '1.0.0'
 
 depends          'base'
 depends          'kernel-modules'
-depends          'nfs', '~> 2.4.1'
-depends          'line', '< 2.0.0'
+depends          'nfs', '~> 2.6.3'
 depends          'firewall'
 
 supports         'centos', '~> 6.0'
