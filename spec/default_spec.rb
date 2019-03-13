@@ -25,22 +25,9 @@ describe 'osl-nfs::default' do
               options: %w(nlm_tcpport=32768 nlm_udpport=32768)
             )
         end
-        %w(tcp udp).each do |proto|
-          it do
-            expect(chef_run).to apply_sysctl_param("fs.nfs.nlm_#{proto}port").with(value: '32768')
-          end
-          it do
-            expect(chef_run.sysctl_param("fs.nfs.nlm_#{proto}port")).to notify('service[nfs-server]')
-          end
-        end
       when CENTOS_6
         it do
           expect(chef_run).to_not load_kernel_module('lockd')
-        end
-        %w(tcp udp).each do |proto|
-          it do
-            expect(chef_run).to_not apply_sysctl_param("fs.nfs.nlm_#{proto}port").with(value: '32768')
-          end
         end
       end
     end
