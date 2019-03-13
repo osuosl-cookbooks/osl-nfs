@@ -3,6 +3,10 @@ osl-nfs CHANGELOG
 This file is used to list changes made in each version of the
 osl-nfs cookbook.
 
+1.0.1 (2019-03-13)
+------------------
+- Update to latest nfs cookbook 2.6.3
+
 1.0.0 (2018-09-12)
 ------------------
 - Chef 13 compatibility fixes
