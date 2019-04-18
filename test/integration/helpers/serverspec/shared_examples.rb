@@ -1,7 +1,3 @@
-require 'serverspec'
-
-set :backend, :exec
-
 shared_examples 'nfs' do
   if os[:release].to_i < 7
     describe service('nfs') do
