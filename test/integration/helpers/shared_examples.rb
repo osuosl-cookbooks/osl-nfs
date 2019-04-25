@@ -17,7 +17,7 @@ else
     it { should be_running }
   end
 end
-describe bash('rpcinfo -p localhost') do
+describe command('rpcinfo -p localhost') do
   [
     %w(111 portmapper),
     %w(32765 status),
