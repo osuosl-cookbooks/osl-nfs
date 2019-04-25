@@ -1,4 +1,7 @@
 ---
+verifier:
+  name: inspec
+
 suites:
   - name: default
     run_list:
@@ -6,5 +9,3 @@ suites:
   - name: homes
     run_list:
       - recipe[osl-nfs::homes]
-verifier:
-  name: inspec
