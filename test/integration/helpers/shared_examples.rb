@@ -1,4 +1,4 @@
-if os[:release].to_i < 7
+if os.release.to_i < 7
   describe service('nfs') do
     it { should be_enabled }
     it { should be_running }
@@ -17,7 +17,7 @@ else
     it { should be_running }
   end
 end
-describe command('rpcinfo -p localhost') do
+describe bash('rpcinfo -p localhost') do
   [
     %w(111 portmapper),
     %w(32765 status),
