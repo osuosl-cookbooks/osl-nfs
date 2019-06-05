@@ -9,10 +9,8 @@ description      'Installs/Configures osl-nfs'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '1.0.1'
 
-depends          'base'
-depends          'kernel-modules'
-depends          'nfs', '~> 2.6.3'
 depends          'firewall'
+depends          'nfs', '~> 2.6.3'
 
 supports         'centos', '~> 6.0'
 supports         'centos', '~> 7.0'
