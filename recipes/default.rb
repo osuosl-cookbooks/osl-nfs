@@ -16,14 +16,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-include_recipe 'kernel-modules'
-
-kernel_module 'lockd' do
-  onboot true
-  options %w(nlm_tcpport=32768 nlm_udpport=32768)
-  only_if { node['platform_version'].to_i >= 7 }
-end
-
 include_recipe 'nfs::server'
-
 include_recipe 'firewall::nfs'
