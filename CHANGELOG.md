@@ -3,6 +3,10 @@ osl-nfs CHANGELOG
 This file is used to list changes made in each version of the
 osl-nfs cookbook.
 
+1.0.2 (2019-06-05)
+------------------
+- Fix duplicated lockd module resources
+
 1.0.1 (2019-03-13)
 ------------------
 - Update to latest nfs cookbook 2.6.3
