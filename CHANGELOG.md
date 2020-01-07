@@ -3,6 +3,10 @@ osl-nfs CHANGELOG
 This file is used to list changes made in each version of the
 osl-nfs cookbook.
 
+1.0.3 (2020-01-07)
+------------------
+- Chef 14 post-migration fixes
+
 1.0.2 (2019-06-05)
 ------------------
 - Fix duplicated lockd module resources
