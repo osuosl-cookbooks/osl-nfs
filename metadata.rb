@@ -7,7 +7,7 @@ license          'Apache-2.0'
 chef_version     '>= 14.0'
 description      'Installs/Configures osl-nfs'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '1.0.3'
+version          '1.0.4'
 
 depends          'firewall'
 depends          'nfs', '~> 2.6.4'

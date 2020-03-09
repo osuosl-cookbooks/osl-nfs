@@ -3,6 +3,10 @@ osl-nfs CHANGELOG
 This file is used to list changes made in each version of the
 osl-nfs cookbook.
 
+1.0.4 (2020-03-09)
+------------------
+- Add Centos 8 support
+
 1.0.3 (2020-01-07)
 ------------------
 - Chef 14 post-migration fixes
