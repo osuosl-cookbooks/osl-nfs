@@ -9,3 +9,9 @@ suites:
   - name: homes
     run_list:
       - recipe[osl-nfs::homes]
+
+provisioner:
+  name: chef_solo
+  #enforce_idempotency: true
+  multiple_converge: 2
+  deprecations_as_errors: true
