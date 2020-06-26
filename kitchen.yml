@@ -1,4 +1,11 @@
 ---
+provisioner:
+  name: chef_solo
+  #Not enforcing idempotency because several resources from the upstream nfs cookbook fail these checks
+  #enforce_idempotency: true
+  #multiple_converge: 2
+  deprecations_as_errors: true
+
 verifier:
   name: inspec
 
@@ -10,8 +17,3 @@ suites:
     run_list:
       - recipe[osl-nfs::homes]
 
-provisioner:
-  name: chef_solo
-  #enforce_idempotency: true
-  multiple_converge: 2
-  deprecations_as_errors: true
