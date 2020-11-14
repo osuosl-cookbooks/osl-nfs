@@ -1,6 +1,6 @@
 ---
 provisioner:
-  name: chef_solo
+  name: chef_zero
   # Not enforcing idempotency because several resources from the upstream nfs cookbook fail these checks
   # enforce_idempotency: true
   # multiple_converge: 2
@@ -16,4 +16,3 @@ suites:
   - name: homes
     run_list:
       - recipe[osl-nfs::homes]
-
