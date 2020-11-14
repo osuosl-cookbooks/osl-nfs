@@ -16,5 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
 include_recipe 'nfs::server'
-include_recipe 'firewall::nfs'
+
+osl_firewall_nfs 'osl-nfs'

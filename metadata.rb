@@ -8,7 +8,7 @@ chef_version     '>= 16.0'
 description      'Installs/Configures osl-nfs'
 version          '1.3.0'
 
-depends          'firewall'
+depends          'osl-firewall'
 depends          'nfs', '~> 2.6.4'
 
 supports         'centos', '~> 7.0'
