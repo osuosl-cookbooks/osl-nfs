@@ -3,6 +3,10 @@ osl-nfs CHANGELOG
 This file is used to list changes made in each version of the
 osl-nfs cookbook.
 
+1.3.0 (2021-04-06)
+------------------
+- Update Chef dependency to >= 16
+
 1.2.0 (2021-03-30)
 ------------------
 - Remove Centos 6 from this cookbook
