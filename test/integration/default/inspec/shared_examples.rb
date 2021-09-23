@@ -1,1 +1,0 @@
-../../helpers/shared_examples.rb

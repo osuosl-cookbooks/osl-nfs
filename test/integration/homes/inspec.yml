@@ -1,0 +1,6 @@
+---
+name: homes
+
+depends:
+  - name: default
+    path: test/integration/default
