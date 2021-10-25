@@ -9,7 +9,7 @@ description      'Installs/Configures osl-nfs'
 version          '2.0.0'
 
 depends          'osl-firewall'
-depends          'nfs', '~> 2.6.4'
+depends          'nfs', '~> 4.0.0'
 
 supports         'centos', '~> 7.0'
 supports         'centos', '~> 8.0'
