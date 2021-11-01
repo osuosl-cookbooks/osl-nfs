@@ -1,9 +1,8 @@
 ---
 provisioner:
   name: chef_zero
-  # Not enforcing idempotency because several resources from the upstream nfs cookbook fail these checks
-  # enforce_idempotency: true
-  # multiple_converge: 2
+  enforce_idempotency: true
+  multiple_converge: 2
   deprecations_as_errors: true
 
 verifier:
