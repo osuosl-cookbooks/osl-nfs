@@ -3,6 +3,10 @@ osl-nfs CHANGELOG
 This file is used to list changes made in each version of the
 osl-nfs cookbook.
 
+2.1.1 (2023-02-22)
+------------------
+- Support for Alma Linux 8
+
 2.1.0 (2021-11-01)
 ------------------
 - Update to Chef 17
