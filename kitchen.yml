@@ -25,5 +25,6 @@ suites:
     run_list:
       - recipe[osl-nfs::default]
   - name: homes
+    # Dokken fails when running exportnfs, stating that it doesn't support NFS export at /data/homes
     run_list:
       - recipe[osl-nfs::homes]
