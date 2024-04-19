@@ -6,6 +6,8 @@ driver:
   chef_version: <%= ENV['CHEF_VERSION'] || '17' %>
   pull_chef_image: false
   pull_platform_image: false
+  volumes:
+    - /data/homes
 
 transport:
   name: dokken
