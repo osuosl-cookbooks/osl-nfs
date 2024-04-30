@@ -3,6 +3,10 @@ osl-nfs CHANGELOG
 This file is used to list changes made in each version of the
 osl-nfs cookbook.
 
+2.1.2 (2024-04-30)
+------------------
+- Test Kitchen Config Refactor
+
 2.1.1 (2023-02-22)
 ------------------
 - Support for Alma Linux 8
