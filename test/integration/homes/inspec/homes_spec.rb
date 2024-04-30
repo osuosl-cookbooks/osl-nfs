@@ -1,3 +1,5 @@
+docker = inspec.command('test -e /.dockerenv')
+
 describe file('/etc/exports') do
   its('content') do
     should eq("/data/homes/ 10.162.136.0/24(rw,sync,mountpoint,no_root_squash)\n")
@@ -12,4 +14,4 @@ describe iptables do
       end
     end
   end
-end
+end unless docker
