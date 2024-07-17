@@ -3,6 +3,10 @@ osl-nfs CHANGELOG
 This file is used to list changes made in each version of the
 osl-nfs cookbook.
 
+2.2.0 (2024-07-17)
+------------------
+- Remove support for CentOS 7
+
 2.1.2 (2024-04-30)
 ------------------
 - Test Kitchen Config Refactor
