@@ -1,6 +1,7 @@
 ---
 driver:
   name: vagrant
+  flavor_ref: m1.medium
 
 verifier:
   name: inspec
@@ -11,13 +12,14 @@ transport:
 provisioner:
   name: chef_infra
   product_name: cinc
-  product_version: '17'
+  product_version: '18'
   enforce_idempotency: true
   multiple_converge: 2
   deprecations_as_errors: true
 
 platforms:
   - name: almalinux-8
+  - name: almalinux-9
 
 suites:
   - name: default
