@@ -3,6 +3,10 @@ osl-nfs CHANGELOG
 This file is used to list changes made in each version of the
 osl-nfs cookbook.
 
+2.2.1 (2024-09-27)
+------------------
+- Alma 9 Support
+
 2.2.0 (2024-07-17)
 ------------------
 - Remove support for CentOS 7
