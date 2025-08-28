@@ -32,3 +32,10 @@ platforms:
       flavor_ref: "m1.medium"
     transport:
       username: almalinux
+  - name: almalinux-10
+    driver_plugin: openstack
+    driver_config:
+      image_ref: "AlmaLinux 10"
+      flavor_ref: "m1.medium"
+    transport:
+      username: almalinux

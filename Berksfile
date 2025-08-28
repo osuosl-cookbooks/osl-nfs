@@ -1,5 +1,6 @@
 source 'https://supermarket.chef.io'
+source 'https://supermarket.osuosl.org'
 
-cookbook 'osl-firewall', git: 'git@github.com:osuosl-cookbooks/osl-firewall'
+solver :ruby, :required
 
 metadata
