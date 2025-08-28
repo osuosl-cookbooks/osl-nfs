@@ -3,6 +3,10 @@ osl-nfs CHANGELOG
 This file is used to list changes made in each version of the
 osl-nfs cookbook.
 
+2.2.2 (2025-08-28)
+------------------
+- AlmaLinux 10 support
+
 2.2.1 (2024-09-27)
 ------------------
 - Alma 9 Support
