@@ -3,6 +3,10 @@ osl-nfs CHANGELOG
 This file is used to list changes made in each version of the
 osl-nfs cookbook.
 
+2.2.3 (2026-07-14)
+------------------
+- cinc: updated kitchen and dokken files
+
 2.2.2 (2025-08-28)
 ------------------
 - AlmaLinux 10 support
