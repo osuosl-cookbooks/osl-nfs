@@ -17,6 +17,6 @@
 # limitations under the License.
 #
 
-include_recipe 'nfs::server'
+nfs_server 'default'
 
 osl_firewall_nfs 'osl-nfs'
