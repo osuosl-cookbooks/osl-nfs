@@ -3,6 +3,10 @@ osl-nfs CHANGELOG
 This file is used to list changes made in each version of the
 osl-nfs cookbook.
 
+2.3.0 (2026-09-09)
+------------------
+- Upgrade upstream nfs cookbook to latest release
+
 2.2.4 (2026-09-09)
 ------------------
 - chef 19 update

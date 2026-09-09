@@ -6,7 +6,7 @@ source_url       'https://github.com/osuosl-cookbooks/osl-nfs'
 license          'Apache-2.0'
 chef_version     '>= 16.0'
 description      'Installs/Configures osl-nfs'
-version          '2.2.4'
+version          '2.3.0'
 
 depends 'osl-firewall'
 depends 'nfs', '~> 6.0.0'
