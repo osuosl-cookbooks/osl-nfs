@@ -3,6 +3,10 @@ osl-nfs CHANGELOG
 This file is used to list changes made in each version of the
 osl-nfs cookbook.
 
+2.2.4 (2026-09-09)
+------------------
+- chef 19 update
+
 2.2.3 (2026-07-14)
 ------------------
 - cinc: updated kitchen and dokken files
