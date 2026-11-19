@@ -17,8 +17,9 @@
 # limitations under the License.
 #
 
-node.default['firewall']['nfs']['range']['4'] = %w(10.162.136.0/24)
-include_recipe 'osl-nfs::default'
+osl_nfs_server 'default' do
+  allowed_ipv4 %w(10.162.136.0/24)
+end
 
 directory '/data/homes/' do
   recursive true
