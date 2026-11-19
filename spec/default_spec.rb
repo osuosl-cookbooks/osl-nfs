@@ -10,9 +10,7 @@ describe 'osl-nfs::default' do
         expect { chef_run }.to_not raise_error
       end
 
-      it { expect(chef_run).to create_nfs_server('default') }
-
-      it { expect(chef_run).to accept_osl_firewall_nfs('osl-nfs') }
+      it { expect(chef_run).to create_osl_nfs_server('default').with(allowed_ipv4: [], allowed_ipv6: []) }
     end
   end
 end

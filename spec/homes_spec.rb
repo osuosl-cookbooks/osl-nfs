@@ -7,7 +7,10 @@ describe 'osl-nfs::homes' do
         ChefSpec::SoloRunner.new(p).converge(described_recipe)
       end
       it do
-        expect(chef_run).to include_recipe('osl-nfs::default')
+        expect(chef_run).to create_osl_nfs_server('default').with(allowed_ipv4: %w(10.162.136.0/24), allowed_ipv6: [])
+      end
+      it do
+        expect(chef_run).to_not include_recipe('osl-nfs::default')
       end
       it do
         expect(chef_run).to create_directory('/data/homes/')

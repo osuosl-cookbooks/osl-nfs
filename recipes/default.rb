@@ -17,6 +17,4 @@
 # limitations under the License.
 #
 
-nfs_server 'default'
-
-osl_firewall_nfs 'osl-nfs'
+osl_nfs_server 'default'
