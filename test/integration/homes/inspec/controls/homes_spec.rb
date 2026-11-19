@@ -1,4 +1,4 @@
-docker = inspec.command('test -e /.dockerenv')
+docker = inspec.command('test -e /.dockerenv').exit_status.zero?
 
 describe file('/etc/exports') do
   its('content') do

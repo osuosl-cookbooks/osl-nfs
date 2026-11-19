@@ -1,4 +1,4 @@
-docker = inspec.command('test -e /.dockerenv')
+docker = inspec.command('test -e /.dockerenv').exit_status.zero?
 
 # With no allowed sources, every NFS port goes through osl_only
 describe iptables do
