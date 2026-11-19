@@ -3,6 +3,10 @@ osl-nfs CHANGELOG
 This file is used to list changes made in each version of the
 osl-nfs cookbook.
 
+2.4.0 (2026-11-19)
+------------------
+- Add osl_nfs_server to limit NFS to listed sources
+
 2.3.0 (2026-09-09)
 ------------------
 - Upgrade upstream nfs cookbook to latest release
